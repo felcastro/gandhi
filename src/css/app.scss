@@ -1,0 +1,27 @@
+@import 'shared/shared.sass';
+
+body, html{
+  height: 100%;
+}
+
+@font-face {
+  font-family: FontAwesome;
+  src: url(/fonts/FontAwesome.otf);
+}
+@font-face {
+  font-family: fontawesome-webfont;
+  src: url(/fonts/fontawesome-webfont.ttf);
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('/fonts/fontawesome-webfont.eot'); /* support Internet explorer  */
+  src: url('/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), /* support Internet explorer  */ url('/fonts/fontawesome-webfont.woff') format('woff'), /* support Modern browser  */ url('/fonts/fontawesome-webfont.ttf') format('truetype'), /* support firefox , chrome   */ url('/fonts/fontawesome-webfont.svg') format('svg'); /* Svg form   */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import 'application/footer.sass';
+@import 'application/nav-bar.sass';
+@import 'application/home.sass';
+@import 'application/about.sass';
+@import 'application/register.sass';

@@ -1,0 +1,87 @@
+<div class="register-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="register-header text-center">
+                    <h1>Cadastre-se agora!</h1>
+                </div>
+                <div class="register-form">
+                    <form class="round-form">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4">
+
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-info" ng-if="!vm.fields.isPerson" ng-click="vm.fields.isPerson = true">Sou pessoa</button>
+                                    <button class="btn btn-info" ng-if="vm.fields.isPerson" ng-click="vm.fields.isPerson = false">Sou instituição</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            *Nome de usuário
+                            <input type="text" class="form-control" placeholder="Informe seu nome de usuário" tabindex="1"
+                            ng-model="vm.fields.username">
+                        </div>
+                        <div class="form-group" ng-if="vm.fields.isPerson">
+                            *Nome completo
+                            <input type="text" class="form-control" placeholder="Informe seu nome completo" tabindex="1"
+                            ng-model="vm.fields.name">
+                        </div>
+                        <div class="form-group" ng-if="!vm.fields.isPerson">
+                            *Nome da instituição
+                            <input type="text" class="form-control" placeholder="Informe o nome da instituição" tabindex="1"
+                            ng-model="vm.fields.name">
+                        </div>
+                        <div class="form-group" ng-if="vm.fields.isPerson">
+                            *CPF
+                            <input type="number" class="form-control" placeholder="Informe seu cpf" tabindex="1"
+                            ng-model="vm.fields.cpf">
+                        </div>
+                        <div class="form-group" ng-if="!vm.fields.isPerson">
+                            *CNPJ
+                            <input type="number" class="form-control" placeholder="Informe seu cnpj" tabindex="1"
+                            ng-model="vm.fields.cnpj">
+                        </div>
+                        <div class="form-group" ng-if="vm.fields.isPerson">
+                            *Data de Nascimento
+                            <input type="date" class="form-control" tabindex="1"
+                            ng-model="vm.fields.birth">
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    *Endereço
+                                    <input type="text" class="form-control" placeholder="Informe seu endereço" tabindex="3"
+                                    ng-model="vm.fields.address">
+                                </div>
+                                <div class="col-md-6">
+                                    Complemento
+                                    <input type="text" class="form-control" placeholder="Complemento do endereço" tabindex="3"
+                                    ng-model="vm.fields.password">
+                                </div> 
+                            </div>    
+                        </div>
+                        <div class="form-group">
+                            *E-mail
+                            <input type="text" class="form-control" placeholder="Informe seu e-mail" tabindex="2"
+                            ng-model="vm.fields.email">
+                        </div>
+                        <div class="form-group">
+                            *Senha
+                            <input type="text" class="form-control" placeholder="Informe sua senha" tabindex="3"
+                            ng-model="vm.fields.password">
+                        </div>
+                        <div class="form-group">
+                            *Confirmação da senha
+                            <input type="text" class="form-control" placeholder="Repita sua senha" tabindex="3"
+                            ng-model="vm.fields.password">
+                            </div>
+                        <button class="btn btn-success" tabindex="4">cadastre-se</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

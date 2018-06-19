@@ -1,0 +1,53 @@
+<div class="home-container">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8">
+      
+          </div>
+          <div class="col-md-4">
+            <div class="register-home">
+              <h1 class="register-title text-center">Faça já sua parte</h1>
+              <form class="round-form">
+                <div class="form-group" ng-if="!vm.isLogin">
+                    <input type="text" class="form-control" placeholder="nome" tabindex="1"
+                    ng-model="fields.name">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="e-mail" tabindex="2"
+                    ng-model="fields.email">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="senha" tabindex="3"
+                    ng-model="fields.password">
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <button class="btn btn-success" tabindex="4">login</button>
+                  </div>
+                  <div class="col-md-6">
+                    <a href="/register" class="btn btn-success" tabindex="4">cadastre-se</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+<style>
+  body { 
+    background-image: url('../images/bg.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .site-header {
+    background-color: transparent !important;
+    box-shadow: none;
+  }
+  .footer {
+    background-color: transparent !important;
+    position: absolute
+  }
+</style>

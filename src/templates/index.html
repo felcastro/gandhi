@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en' ng-app='gandhi'>
+  <head>
+    <base href="/" />
+    <ng-include src="'shared/_header.html'"></ng-include>
+  </head>
+
+  <body ng-app="gandhi" ng-controller="BaseController as base">
+
+    <header>
+      <ng-include src="'shared/page.header.html'"></ng-include>
+    </header>
+
+    <main class="main fullscreen">
+      <ng-view class="view"></ng-view>
+    </main>
+
+    <footer class="footer">
+      <ng-include src="'shared/_footer.html'"></ng-include>
+    </footer>
+
+  </body>
+
+  <script src="js/vendor.js"></script>
+  <script src="views/templates.js"></script>
+  <script src="js/scripts.js"></script>
+</html>

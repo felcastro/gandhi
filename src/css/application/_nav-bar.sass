@@ -1,0 +1,24 @@
+.site-header
+    background-color: $gray-dark
+    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+    .header-logo
+        width: 12em
+        @media screen and (max-width: $screen-xs-max)
+            width: 9em
+    .nav-link
+        color: white !important
+        &:hover
+            color: black !important
+    .navbar-toggler
+        background-color: white !important
+    .btn-login
+        border-radius: 5em
+        .btn-login-txt
+            margin-left: .7em
+            margin-right: .7em
+    .search-form
+        @media screen and (max-width: $screen-md-max)
+            display: none
+    .navbar-links-area
+        @media screen and (max-width: $screen-md-max)
+            display: none
