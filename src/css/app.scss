@@ -1,7 +1,11 @@
 @import 'shared/shared.sass';
 
 body, html{
-  height: 100%;
+  min-height: 100%;
+}
+
+html {
+  position: relative;
 }
 
 @font-face {
@@ -25,3 +29,4 @@ body, html{
 @import 'application/home.sass';
 @import 'application/about.sass';
 @import 'application/register.sass';
+@import 'application/dashboard.sass'

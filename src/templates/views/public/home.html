@@ -7,7 +7,7 @@
           <div class="col-md-4">
             <div class="register-home">
               <h1 class="register-title text-center">Faça já sua parte</h1>
-              <form class="round-form">
+              <form class="round-form" ng-submit="vm.login()">
                 <div class="form-group" ng-if="!vm.isLogin">
                     <input type="text" class="form-control" placeholder="nome" tabindex="1"
                     ng-model="fields.name">
@@ -21,10 +21,10 @@
                     ng-model="fields.password">
                 </div>
                 <div class="row">
-                  <div class="col-md-6">
-                    <button class="btn btn-success" tabindex="4">login</button>
+                  <div class="col-6">
+                    <input class="btn btn-success" type="submit" value="login" tabindex="4"></input>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-6">
                     <a href="/register" class="btn btn-success" tabindex="4">cadastre-se</a>
                   </div>
                 </div>

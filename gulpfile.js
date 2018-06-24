@@ -101,3 +101,5 @@ gulp.task('start', function () {
 	gulp.watch(['./src/css/**/*.scss'],['sass']);
 	gulp.watch(['./src/css/**/*.sass'],['sass']);
 });
+
+gulp.task('default', ['start']);

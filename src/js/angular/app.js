@@ -23,6 +23,11 @@
           controller: 'RegisterController',
           controllerAs: 'vm'
         })
+        .when('/dashboard', {
+          templateUrl: 'private/dashboard.html',
+          controller: 'DashboardController',
+          controllerAs: 'vm'
+        })
         .otherwise('/');
     });
 

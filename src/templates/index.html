@@ -8,7 +8,8 @@
   <body ng-app="gandhi" ng-controller="BaseController as base">
 
     <header>
-      <ng-include src="'shared/page.header.html'"></ng-include>
+      <ng-include src="'shared/page.header.html'" ng-if="!baseIsLogged"></ng-include>
+      <ng-include src="'private/page.header.html'" ng-if="baseIsLogged"></ng-include>
     </header>
 
     <main class="main fullscreen">
